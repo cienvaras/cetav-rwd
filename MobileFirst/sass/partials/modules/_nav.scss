@@ -1,0 +1,98 @@
+//
+// Estilos para la navegación
+//
+
+// Navegación principal
+
+.nav-main {
+  margin: 15px 0;
+  ul {
+    margin: 0;
+    padding: 0;
+    height: 0;
+    overflow: hidden;
+    transition: height 500ms linear;
+    @media (min-width: 680px) {
+      height: auto;
+    }
+  }
+  ul.expanded {
+    height: 176px;
+    transition: height 500ms linear;
+  }
+  li {
+    list-style-type: none;
+    @media (min-width: 680px) {
+      display: inline-block;
+    }
+  }
+  li a {
+    display: block;
+    padding: 10px;
+    background-color: #ccc;
+    border-bottom: 1px solid #fff;
+    color: #000;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    @media (min-width: 680px) {
+      padding: 10px 20px;
+      border-bottom: none;
+    }
+    &:hover {
+      background-color: #999;
+    }
+  }
+}
+
+.menu-toggle {
+  color: #000;
+  font-size: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  @media (min-width: 680px) {
+    display: none;
+  }
+}
+
+// Redes Sociales
+
+.nav-social {
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 5px;
+  }
+  a {
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 3px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: #ccc;
+    background-image: url(../img/sprite.svg);
+    background-repeat: none;
+    &:hover {
+      background-color: #999;
+    }
+  }
+}
+
+.no-svg .nav-social a {
+  background-image: url(../img/sprite.png);
+}
+
+.nav-social-twitter {
+  background-position: 2px -24px;
+}
+
+.nav-social-facebook {
+  background-position: 6px 0px;
+}

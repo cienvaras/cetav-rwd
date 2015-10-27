@@ -1,0 +1,62 @@
+/*
+ * Rules for base elements
+ */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+}
+
+p, li {
+  @include font-size(14);
+  line-height: 1.5;
+}
+
+p, ul, ol, dl {
+  margin: 0 0 0.5em 0;
+}
+
+ul, ol {
+  padding-left: 2em;
+}
+
+p {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin-top: 0;
+}
+
+h1.title {
+  @include font-size(24);
+  margin-top: 1em;
+}
+
+// Tables
+
+// ...
+
+// Forms
+
+// ...
+
+/*
+ * Rules for base drupal elements
+ */
+
+.element-invisible {
+  @extend %hidden;
+}
