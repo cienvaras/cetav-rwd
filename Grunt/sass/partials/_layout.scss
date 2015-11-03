@@ -1,0 +1,33 @@
+//
+// Estilos de layout
+//
+
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.content-main {
+  overflow: hidden;
+}
+
+.blog-article--full {
+  @media (min-width: 680px) {
+    float: left;
+    width: 74%;
+  }
+  @media (min-width: 768px) {
+    width: 70%;
+  }
+}
+
+.recent-articles {
+  background-color: #eee;
+  @media (min-width: 680px) {
+    float: right;
+    width: 24%;
+  }
+  @media (min-width: 768px) {
+    width: 28%;
+  }
+}
